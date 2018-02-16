@@ -73,3 +73,9 @@ ul.gray li a:hover:not(.active) {
 .conditions p {
     margin: 0;
 }
+.show {
+    display: block;
+}
+.hamburguer {
+    display: none;
+}
