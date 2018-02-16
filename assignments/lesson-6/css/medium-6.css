@@ -5,7 +5,7 @@
     
     section.forecast { display:none; }  /* show the 10-day forecast with the medium view and up */
     
-    article p.town-article img { width: 62.666%; float:right; }  /* responsive images */
+    article p.town-article img { width: 100%; margin: 0 auto; }  /* responsive images */
     
     ul.horizontal li {
         float: none;
@@ -21,8 +21,5 @@
     }
     .hamburguer {
         display: block;
-    }
-    .town-article-img {
-        margin: 0 auto;
     }
   }
