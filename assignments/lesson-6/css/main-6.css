@@ -79,4 +79,5 @@ ul.gray li a:hover:not(.active) {
 .hamburguer {
     display: none;
     float:right;
+    padding: 10px 20px;
 }
