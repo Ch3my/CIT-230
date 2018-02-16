@@ -78,4 +78,5 @@ ul.gray li a:hover:not(.active) {
 }
 .hamburguer {
     display: none;
+    float:right;
 }

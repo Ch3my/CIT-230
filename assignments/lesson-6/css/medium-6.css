@@ -22,4 +22,7 @@
     .hamburguer {
         display: block;
     }
+    .town-article-img {
+        margin: 0 auto;
+    }
   }
