@@ -15,6 +15,10 @@ header .subheading {
     overflow: hidden;
 
 }
+header {
+    display: flex;
+}
+
 h1 {
     font-family: 'Merriweather', serif;
 }
@@ -58,9 +62,11 @@ ul.gray li a.active {
 ul.gray li a:hover:not(.active) {
     background-color: #ddd;
 }
-.logo {
+/*.logo {
     float:left;
-}
+} */
+
+
 .forecast-pic {
     float: left;
 }
