@@ -1,10 +1,24 @@
-.grid {
-    display: grid;
-    grid-gap: 20px;
-    grid-template-columns: 25% 25% 25%;
+@media only screen and (max-width: 37.5em) { /*  MEDIUM  */
+    .grid {
+        grid-template-columns: 30% 30%;
+    }
+}
+@media only screen and (min-width: 64em) { /* LARGE */
+    .grid {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 25% 25% 25%;
+    }
+}
+
+.grid { /* SMALL */
+    grid-template-columns: 1fr; 
 }
 .grid div img {
     height: auto;
     display: block;
     max-width: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
