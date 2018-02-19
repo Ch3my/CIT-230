@@ -10,10 +10,18 @@
     ul.horizontal li {
         /* float: none; */
         display: flex;
+        justify-content: center;
     }
-    .forecast-pic {
+    ul.gray li a {
+        width: 100%;
+    }
+    .forecast-section {
+        display: grid;
+    }
+    /* .forecast-pic {
         float: none;
-    }
+    } */
+
     header, nav, main, footer { 
         max-width: 90%;
     }
