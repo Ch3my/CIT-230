@@ -25,6 +25,9 @@
     header, nav, main, footer { 
         max-width: 90%;
     }
+    header {
+        display: grid;
+    }
     .hide {
         display: none;
     }
