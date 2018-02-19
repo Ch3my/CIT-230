@@ -43,7 +43,8 @@ main figure img { width: 100%; }
     background-color: #f3f3f3;
 }
 ul.horizontal li {
-    float: left;
+    /* float: left; */
+    display: inline-flex;
 }
 ul.gray li a {
     display: block;
@@ -65,10 +66,11 @@ ul.gray li a:hover:not(.active) {
 /*.logo {
     float:left;
 } */
-
-
-.forecast-pic {
+/*.forecast-pic {
     float: left;
+}*/
+.forecast-section {
+    display: flex;
 }
 .highlow p {
     margin: 0;

@@ -8,7 +8,8 @@
     article p.town-article img { width: 100%; margin: 0 auto; }  /* responsive images */
     
     ul.horizontal li {
-        float: none;
+        /* float: none; */
+        display: flex;
     }
     .forecast-pic {
         float: none;
