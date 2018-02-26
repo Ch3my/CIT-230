@@ -6,15 +6,28 @@
   <meta name="author" content=" Jose M Concha">
   <meta name="description" content="CIT 230 lesson 8 assignment">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  table {
+      font-family: 'Ubuntu', 'sans-serif';
+  }
+  table thead {
+      background-color: #7fb9c2;
+  }
+  table tbody:nth-child(even){
+      background-color: #e7ffed;
+  }
+  </style>
 </head>
 
 <body>
 <main>
     <table >
+        <thead>
+          <tr>
+             <th colspan="3">ACME Wildwest</th>
+          </tr>
+        </thead>
         <tbody>
-            <tr>
-                <td colspan="3"> </td>
-            </tr>
             <tr>
                 <td>Period</td>
                 <td>Sales</td>
@@ -49,10 +62,12 @@
                 <td>$6,820</td>
                 <td>$7,500</td>
             </tr>
-            <tr>
-                <td colspan="3">Compiled 12.20.2020 by bRauls</td>
-            </tr>
         </tbody>
+            <tfoot>
+                <tr>
+                   <td colspan="3">Compiled 12.20.2020 by bRauls</td>
+                </tr>
+            </tfoot>
     </table>
 
 </main>
