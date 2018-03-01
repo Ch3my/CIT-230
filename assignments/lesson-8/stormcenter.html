@@ -42,12 +42,16 @@
     <form action="thanks.html" method="POST">
         <label>Full name</label>
         <input type="text" name="fullname" required pattern="[a-zA-Z0-9_]{5}">
+        <br>
         <label>Email</label>
         <input type="email" name="email" placeholder="me@myhouse.cl">
+        <br>
         <label>Phone Number</label>
         <input type="tel" name="tel" required >
+        <br>
         <label>Zip Code</label>
         <input type="number" name="zipCode" >
+        <br>
         <label>Storm Date</label>
         <datalist name="stormType">
             <option value="Flash Flood">
@@ -56,8 +60,10 @@
             <option value="Thuderstorm">
             <option value="Tornado">
         </datalist>
+        <br>
         <label>Storm Severity</label>
         <input type="range" name="severity" min="1" max="10">
+        <br>
         <label>Storm Region</label>
         <select name="stormRegion">
             <option value="0">Select Region ...</option>
@@ -65,6 +71,7 @@
             <option value="Greenville">Greenville</option>
             <option value="Springfield">Springfield</option>
         </select>
+        <br>
         <label>In-danger Level</label>
         <input type="radio" name="in-dangerLevel" value="yes">
         <input type="radio" name="in-dangerLevel" value="maybe">
