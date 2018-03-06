@@ -38,12 +38,13 @@
       myH1.textContent = jsonObj['squadName'];
       header.appendChild(myH1);
 
-      var headerHR = document.createElement('hr');
-      header.appendChild(headerHR);
+      var headerHR_1 = document.createElement('hr');
+      header.appendChild(headerHR_1);
       var myPara = document.createElement('p');
       myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
       header.appendChild(myPara);
-      header.appendChild(headerHR);
+      var headerHR_2 = document.createElement('hr');
+      header.appendChild(headerHR_2);
 
     }
 
