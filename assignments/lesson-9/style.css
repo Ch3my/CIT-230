@@ -2,7 +2,7 @@
 
 html {
   font-family: 'Playfair Display', serif;
-  background-color: snow;
+  background-color: #f9f7f1;
 }
 
 body {
@@ -12,6 +12,7 @@ body {
 
 h1, h2 {
   font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 
 /* header styles */
@@ -30,9 +31,13 @@ header p {
 /* section styles */
 
 section article {
-  width: 33%;
+  width: 32%;
   float: left;
   padding-left: 10px;
+}
+section article:nth-child(2) {
+  border-left: 1px solid black; 
+  border-right: 1px solid black;
 }
 
 section p {

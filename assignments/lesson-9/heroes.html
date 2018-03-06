@@ -40,7 +40,10 @@
 
       var myPara = document.createElement('p');
       myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+      var headerHR = document.createElement('hr');
       header.appendChild(myPara);
+      header.appendChild(headerHR);
+
     }
 
 function showHeroes(jsonObj) {
