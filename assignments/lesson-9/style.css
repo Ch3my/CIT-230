@@ -1,7 +1,8 @@
 /* || general styles */
 
 html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'Playfair Display', serif;
+  background-color: snow;
 }
 
 body {
@@ -10,7 +11,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Faster One', cursive;
+  font-family: 'Anton', sans-serif;
 }
 
 /* header styles */
