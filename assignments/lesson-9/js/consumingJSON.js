@@ -13,7 +13,7 @@ request.onload = function() {
 function showTownData( townData ) {
     var towns = townData['towns']
     for( var i = 0; i < towns.length; i++ ) {
-        var article = document.createElement( article );
+        var article = document.createElement( 'article' );
 
         var title = document.createElement( 'h1' );
         var motto = document.createElement( 'h2' );
@@ -22,9 +22,9 @@ function showTownData( townData ) {
         var averageRainfall = document.createElement('p');
         title.textContent = towns[i]['name'];
         motto.textContent = towns[i]['motto'];
-        yearFounded.textContent = towns[i]['yearFounded'];
-        currentPopulation.textContent = towns[i]['currentPopulation'];
-        averageRainfall.textContent = towns[i]['averageRainfall'];
+        yearFounded.textContent = 'Year Founded' + towns[i]['yearFounded'];
+        currentPopulation.textContent = 'Current Population' + towns[i]['currentPopulation'];
+        averageRainfall.textContent = 'Average Rainfall' + towns[i]['averageRainfall'];
 
         article.appendChild( title );
         article.appendChild( motto );
