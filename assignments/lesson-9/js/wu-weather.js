@@ -21,9 +21,9 @@ function showData ( townData ) {
     sCurrentWeather.textContent = townData[ 'current_observation' ]['weather'];
     currentTemp.textContent = townData[ 'current_observation' ]['temp_f'];
     currentWindSpeed.textContent = townData[ 'current_observation' ]['wind_mph'];
-    icon.setAttribute('src', townData[ 'current_observation' ]['icon_url'] )
-    icon.setAttribute('alt', townData[ 'current_observation' ]['icon'] )
-    textDescrip.textContent = townData[ 'forecast' ]['txt_forecast']['forecastday'][0]['fcttext'] + ' Low ' 
+    icon.setAttribute('src', townData[ 'current_observation' ]['icon_url'] );
+    icon.setAttribute('alt', townData[ 'current_observation' ]['icon'] );
+    textDescrip.textContent = townData[ 'forecast' ]['txt_forecast']['forecastday'][0]['fcttext'] + ' Low ' +
             townData['forecast'][ 'simpleforecast' ]['forecastday'][0]['low']['fahrenheit'] + ' High ' +
             townData['forecast'][ 'simpleforecast' ]['forecastday'][0]['high']['fahrenheit'];
 
