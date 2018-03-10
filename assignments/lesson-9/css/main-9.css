@@ -22,6 +22,10 @@ nav {
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
+.hide {
+    display: none;
+}
+
 nav button { display:none; }  /* hamburger button does not need to be shown */
 /* Other Class Selectors */
 .horizontal {
