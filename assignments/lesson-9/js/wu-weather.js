@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var requestURL = 'http://api.wunderground.com/api/a4db95e21bffa11a/conditions/forecast/q/mn/Franklin.json';
+var requestURL = 'https://api.wunderground.com/api/a4db95e21bffa11a/conditions/forecast/q/mn/Franklin.json';
 var request = new XMLHttpRequest();
 request.open( 'GET', requestURL );
 request.responseType = 'json';
