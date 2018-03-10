@@ -59,15 +59,9 @@ ul.gray li a:hover:not(.active) {
 .logo {
     float:left;
 }
-.forecast-pic {
-    float: left;
+section {
+    display: flex;
 }
-.highlow p {
-    margin: 0;
-}
-.current p {
-    margin: 0;
-}
-.conditions p {
-    margin: 0;
+section article {
+    padding: 20px;
 }

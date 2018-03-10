@@ -22,9 +22,9 @@ function showTownData( townData ) {
         var averageRainfall = document.createElement('p');
         title.textContent = towns[i]['name'];
         motto.textContent = towns[i]['motto'];
-        yearFounded.textContent = 'Year Founded' + towns[i]['yearFounded'];
-        currentPopulation.textContent = 'Current Population' + towns[i]['currentPopulation'];
-        averageRainfall.textContent = 'Average Rainfall' + towns[i]['averageRainfall'];
+        yearFounded.textContent = 'Year Founded: ' + towns[i]['yearFounded'];
+        currentPopulation.textContent = 'Current Population: ' + towns[i]['currentPopulation'];
+        averageRainfall.textContent = 'Average Rainfall: ' + towns[i]['averageRainfall'];
 
         article.appendChild( title );
         article.appendChild( motto );
