@@ -20,11 +20,11 @@ function showTownData( townData ) {
         var yearFounded = document.createElement('p');
         var currentPopulation = document.createElement('p');
         var averageRainfall = document.createElement('p');
-        title.textContent = townData['name'];
-        motto.textContent = townData['motto'];
-        yearFounded.textContent = townData['yearFounded'];
-        currentPopulation.textContent = townData['currentPopulation'];
-        averageRainfall.textContent = townData['averageRainfall'];
+        title.textContent = towns[i]['name'];
+        motto.textContent = towns[i]['motto'];
+        yearFounded.textContent = towns[i]['yearFounded'];
+        currentPopulation.textContent = towns[i]['currentPopulation'];
+        averageRainfall.textContent = towns[i]['averageRainfall'];
 
         article.appendChild( title );
         article.appendChild( motto );
