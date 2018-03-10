@@ -15,8 +15,8 @@ function showTownData( townData ) {
     for( var i = 0; i < towns.length; i++ ) {
         var article = document.createElement( article );
 
-        var title = document.createElement( h1 );
-        var motto = document.createElement( h2 );
+        var title = document.createElement( 'h1' );
+        var motto = document.createElement( 'h2' );
         var yearFounded = document.createElement('p');
         var currentPopulation = document.createElement('p');
         var averageRainfall = document.createElement('p');
