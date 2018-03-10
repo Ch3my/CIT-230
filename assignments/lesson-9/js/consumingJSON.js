@@ -12,7 +12,7 @@ request.onload = function() {
 
 function showTownData( townData ) {
     var towns = townData['towns']
-    for( var i = 0; i < towns.lenght; i++ ) {
+    for( var i = 0; i < towns.length; i++ ) {
         var article = document.createElement( article );
 
         var title = document.createElement( h1 );
