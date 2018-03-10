@@ -27,6 +27,13 @@ function showData ( townData ) {
             townData['forecast'][ 'simpleforecast' ]['forecastday'][0]['low']['fahrenheit'] + ' High ' +
             townData['forecast'][ 'simpleforecast' ]['forecastday'][0]['high']['fahrenheit'];
 
+    article.appendChild(sCurrentWeather);
+    article.appendChild(currentTemp);
+    article.appendChild(currentWindSpeed);
+    article.appendChild(icon);
+    article.appendChild(textDescrip);
+    section.appendChild(article);
+
     }
 
 }
