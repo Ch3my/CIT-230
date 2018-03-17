@@ -15,6 +15,10 @@ header .subheading {
     overflow: hidden;
 
 }
+header a {
+    text-decoration: none;
+    color: black;
+}
 
 nav {
     clear: both;
@@ -64,7 +68,7 @@ ul.gray li a:hover:not(.active) {
     float:left;
 }
 section {
-    display: flex;
+    /* display: flex;*/
 }
 section article {
     padding: 20px;
