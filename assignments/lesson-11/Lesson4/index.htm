@@ -7,8 +7,14 @@
 	<script src="js/jquery-2.2.1.min.js"></script>
 	<script>
 	$(function(){
-		// jQuery Code goes here
-
+		//console.log( $( 'input[type="text"]').css('background-color') );
+		toggleStyle = function() {
+			if( $('input[type="text"]').css('background-color') === 'rgb(255,255,255)' ) {
+				$('input[type="text"]').css('background-color', 'rbg(255,255,255)');
+			} else {
+				$('input[type="text"]').css('background-color', 'rbg(255,0,0)');				
+			}
+		}
 	})
 	</script>
 </head>
