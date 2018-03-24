@@ -18,6 +18,18 @@
 			}
 		}
 		$('#ReqAQuoteBtn').click( toggleStyle );
+
+		// Lesson 4, Step 2: Inserting Content
+		$('.coreValues').prepend("<li><strong>This is Brand New !!</strong>");
+		$('<li><strong>This is also great !!</strong></li>').appendTo('.coreValues');
+		var nameVal = $('input[name="nameVal"]');
+		function fillEmpty() {
+			if(nameVal.val() == '') {
+				nameVal.val('John Doe');
+			}
+		}
+		$('#ReqAQuoteBtn').click(fillEmpty);
+
 	})
 	</script>
 </head>
