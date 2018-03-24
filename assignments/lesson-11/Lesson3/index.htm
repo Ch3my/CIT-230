@@ -22,6 +22,17 @@
 				$('h2')[e].style.borderStyle = 'solid';
 				$('h2')[e].style.backgroundColor = 'rgba(255, 0, 0 , 0.2)';
 			}
+			$( '.navigation > li:nth-child(3) > a').css('color', 'rgb( 255, 0, 0 )' );
+			for( var x = 0; x < $( '.navigation > li:nth-child(even) > a' ).length; x++ ) {
+				$( '.navigation > li:nth-child(even) > a' )[x].style.color = 'rgb(255, 0, 0)';
+			}
+			// Lesson 3, Step 2: Introduction to Basic jQuery Selectors: IDs and Classes
+			$('#alcoveLogo').css( 'opacity', 0.4 );
+			$('.servicesBtn').css( 'color', '#FFF' );
+
+			// Lesson 3, Step 3: Selecting by Element Type and Attribute Value
+			$('input[name="nameVal"]').css('border', '1px solid red');
+
 		})
 	</script>
 </head>
