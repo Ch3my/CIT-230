@@ -8,13 +8,15 @@
 	<script>
 	$(function(){
 		//console.log( $( 'input[type="text"]').css('background-color') );
-		toggleStyle = function() {
-			if( $('input[type="text"]').css('background-color') === 'rgb(255,255,255)' ) {
-				$('input[type="text"]').css('background-color', 'rbg(255,255,255)');
+		var toggleStyle = function() {
+			var inputFields = $('input[type="text"]');
+			if( inputFields.css('background-color') === 'rgb( 255, 0, 0 )' ) {
+				inputFields.css('background-color', 'rbg(255,255,255)');
 			} else {
-				$('input[type="text"]').css('background-color', 'rbg(255,0,0)');				
+				inputFields.css('background-color', 'rbg(255,0,0)');				
 			}
 		}
+		$('#ReqAQuoteBtn').click( toggleStyle );
 	})
 	</script>
 </head>
