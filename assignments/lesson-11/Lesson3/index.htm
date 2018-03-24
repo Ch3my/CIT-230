@@ -10,7 +10,8 @@
 	<script>
 		$(function () {
 			$('#alcoveLogo').css('opacity', 0.4);
-			for( var i = 0; $('.servicesBtn').length < i; i++ ) {
+			var servicesBtn_list = $('.servicesBtn'); 
+			for( var i = 0; servicesBtn_list.length < i; i++ ) {
 				if( i % 2 == 0 ) {
 					alert(i)
 					$('.servicesBtn')[i].css('color', '#006aff');
