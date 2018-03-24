@@ -10,11 +10,10 @@
 	<script>
 		$(function () {
 			$('#alcoveLogo').css('opacity', 0.4);
-			var servicesBtn_list = $('.servicesBtn'); 
-			for( var i = 0; i < servicesBtn_list.length ; i++ ) {
+			for( var i = 0; i < $('.servicesBtn').length ; i++ ) {
 				if( i % 2 == 0 ) {
 					alert(i)
-					servicesBtn_list[i].css('color', '#006aff');
+					$('.servicesBtn')[i].style.color = '#006aff';
 				}
 			}
 		})
