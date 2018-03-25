@@ -8,7 +8,14 @@
 	<!-- <script src="js/jquery-2.2.1.min.js"></script> -->	
 	<script>
 	$(function(){
-		// jQuery Code goes here
+		$(document).on({
+			keydown: function(evt){
+				$('.keyCode').html(evt.keyCode);
+			},
+			keypress: function() {
+				$('.charCode').html(evt.charCode);
+			}
+		})
 
 	})
 	</script>
