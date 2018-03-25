@@ -8,7 +8,21 @@
 	<!-- <script src="js/jquery-2.2.1.min.js"></script> -->	
 	<script>
 	$(function(){
-		// jQuery Code goes here
+		$('input').on({
+			focus: function(){
+				$(this).addClass('focus');
+			},
+			blur: function() {
+				$(this).removeClass('focus')
+				$(this).removeClass('select');
+			},
+			select: function() {
+				$(this).addClass('select');
+			}
+		})
+		$('#accountType').change(function(){
+			alert("You Selected the " + $(this).val + " Package")
+		})
 
 	})
 	</script>
