@@ -15,7 +15,16 @@
 				return colors[parseInt(Math.random()*colors.length)];
 			}
 
-			// Your jQuery Code goes here
+			$('.container > div').on({
+				mouseover: function() {
+					$(this).css('background-color', randomize);
+				}
+			})
+			$('.container > div > div').on({
+				mouseenter: function() {
+					$(this).css('background-color', randomize);
+				}
+			})
 
 	})
 	</script>
