@@ -35,7 +35,7 @@
 					}
 
 				},
-				click: function (){
+				click: function (evt){
 					if(calculateDistance(evt.offsetX, evt.offsetY) < 8){
 						statusDisplay.html('congratulations!!');
 					} else {
@@ -43,7 +43,7 @@
 					}
 					$(this).off();
 				},
-				mouseleave: function(){ 
+				mouseleave: function(evt){ 
 					statusDisplay.html("Finde the Hand");
 					$('.coordinates').html('0,0');
 				}
