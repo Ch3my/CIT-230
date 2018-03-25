@@ -18,7 +18,36 @@
 
 			var statusDisplay = $('.status')
 
-			// Your jQuery Code goes here
+			$('.container').on({
+				mousemove : function(evt){
+					$('.coordinates').html(evt.offsetX + ',' + evt.offsetY);
+					var distance = calculateDistance(evt.offsetX, evt.offsetY);
+					if(distance > 30) {
+						statusDisplay.html('You are too far off !!');
+					} else if(distance > 20 && distance < 30) {
+						statusDisplay.html('You are close !!');
+					} else if(distance > 10 && distance < 20) {
+						statusDisplay.html('You are very Close !!');
+					} else if(distance > 8 && distance < 10) {
+						statusDisplay.html('Almost there !!');
+					} else if(distance >= 0 && distance < 8) {
+						statusDisplay.html('yay!!! You found the Hand !! Now Click!');
+					}
+
+				},
+				click: function (){
+					if(calculateDistance(evt.offsetX, evt.offsetY) < 8){
+						statusDisplay.html('congratulations!!');
+					} else {
+						statusDisplay.html('Oops! You Lost the game');
+					}
+					$(this).off();
+				},
+				mouseleave: function(){ 
+					statusDisplay.html("Finde the Hand");
+					$('.coordinates').html('0,0');
+				}
+			})
 
 		})
 	</script>
