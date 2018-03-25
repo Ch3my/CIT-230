@@ -20,6 +20,12 @@
 			},
 			dblclick: function() {
 				$(this).addClass('orangeBox').html($(this).index());
+			},
+			mouseenter: function() {
+				$(this).css('opacity', '0.3');
+			},
+			mouseleave: function() {
+				$(this).css('opacity', '0');
 			}
 		}, 'li');
 
