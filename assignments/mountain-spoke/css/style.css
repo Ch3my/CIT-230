@@ -1,1 +1,10 @@
 #success_message{ display: none;}
+#logo {
+    position: absolute;
+    top: 0;
+    max-width: 100px;
+    z-index: 2;
+}
+.logo-margin{
+    margin-left: 200px;
+}
