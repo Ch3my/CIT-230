@@ -9,3 +9,15 @@
 .logo-margin{
     margin-left: 200px;
 }
+iframe {
+    width: 100%;
+}
+.indigo {
+    background-color: #3f51b5!important;
+}
+footer.page-footer .footer-copyright {
+    overflow: hidden;
+    background-color: rgba(0,0,0,.2);
+    font-size: .9rem;
+    color: rgba(255,255,255,.6);
+}
