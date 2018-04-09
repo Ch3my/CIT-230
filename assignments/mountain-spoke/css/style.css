@@ -2,8 +2,9 @@
 #logo {
     position: absolute;
     top: 0;
-    max-width: 100px;
+    max-width: 150px;
     z-index: 2;
+    margin-left: 35px;
 }
 .logo-margin{
     margin-left: 200px;
