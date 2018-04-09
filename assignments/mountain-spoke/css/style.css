@@ -15,6 +15,12 @@ h1,h2,h3,h4,h5,h6 {
 .logo-margin{
     margin-left: 200px;
 }
+
+.navbar-nav > a:hover {
+    background-color: #db700e;
+    color: white;
+}
+
 iframe {
     width: 100%;
 }
@@ -39,7 +45,7 @@ a:hover, a:focus {
     position: relative;
     padding-top: 60px;
     padding-bottom: 60px;
-    background-color: #1C1D21
+    background-color: #001547;
 }
 
 .footer-logo {
