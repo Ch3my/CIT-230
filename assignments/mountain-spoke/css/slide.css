@@ -35,27 +35,28 @@
 	height: 100%;
 	
 }
+.slider > div {
+	    /* Full height */
+		height: 100%; 
+
+		/* Center and scale the image nicely */
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+}
 .s1 {
 	background-image: url('../img/1.jpg');
-    /* Full height */
-	height: 100%; 
-
-	/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	
 }
 .s2 {
-	background-color: rgb(142,91,33);
+	background-image: url('../img/2.jpg');
 	
 }
 .s3 {
-	background-color: rgb(124,144,176);
+	background-image: url('../img/3.jpg');
 	
 }
 .s4 {
-	background-color: rgb(217,0,198);
+	background-image: url('../img/4.jpg');
 	
 }
 .slide span {
