@@ -1,6 +1,6 @@
 .slider {
 	position: relative;
-	height: 70vh;
+	height: 80vh;
 	text-transform: uppercase;
 	margin-bottom: 4rem;
 	
@@ -61,6 +61,7 @@
 }
 .slide span {
 	font-size: 6rem;
+	color: #db700e;
 	
 }
 .slide em {
