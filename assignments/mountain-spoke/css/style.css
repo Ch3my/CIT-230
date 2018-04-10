@@ -108,3 +108,6 @@ a:hover, a:focus {
 #event-card p {
     margin-bottom: 5px;
 }
+.event-second-card {
+    right: 10%;
+}
