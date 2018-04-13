@@ -12,6 +12,13 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 2;
     margin-left: 35px;
 }
+@media (max-width: 600px) {
+    #logo {
+      max-width: 70px;
+      margin-bottom: 10px;
+    }
+  }
+
 .logo-margin{
     margin-left: 200px;
 }
