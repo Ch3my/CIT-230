@@ -78,3 +78,12 @@ button {
   padding: .5rem;
   margin: .6rem .2rem;
 }
+@media (max-width: 600px) {
+
+	.slider em {
+		font-size: 3em;
+	}
+	.slider span {
+		font-size: 3em;
+	}
+}
