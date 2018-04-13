@@ -1,9 +1,15 @@
 {
   "items": [{
-    "product": "item 1",
-    "value": 2123123
+    "product": "Change Tires",
+    "description": "Just the change of tires, the tire itself is not included",
+    "value": 5.00
   },{
-    "product": "item 2",
-    "value": 2234433
+    "product": "Entire Bike Maintainance",
+    "description": "cleaning and lubrication of moving parts, chain lubrication, maintenance of shock absorbers",
+    "value": 15.00
+  },{
+    "product": "Paint Bike",
+    "description": "We paint your bike, you choose the color (max 2 colors)",
+    "value": 20.00
  }]
 }
