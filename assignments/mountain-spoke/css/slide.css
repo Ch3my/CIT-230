@@ -80,10 +80,10 @@ button {
 }
 @media (max-width: 600px) {
 
-	.slider em {
+	.slide em {
 		font-size: 3em;
 	}
-	.slider span {
+	.slide span {
 		font-size: 3em;
 	}
 }
