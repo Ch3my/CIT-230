@@ -39,8 +39,10 @@
                 var tr = document.createElement('tr');
                 keys = Object.keys(data.items);
                 for (x = 0; x < keys.length; x++) {
+                    var thisKeyEval = 'data.items.' + keys[x];
+                    console.log(thisKeyEval);
                     var td = document.createElement('td');
-                    td.textContent = data.items.keys[x];
+                    td.textContent =  eval(thisKeyEval);
                     tr.appendChild(td);
                     console.log(tr);
                 }
