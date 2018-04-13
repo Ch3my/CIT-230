@@ -10,7 +10,7 @@ $(function () {
     
     // Show First Info
     
-    $('.info').first().show().animate({width: '40%'});
+    $('.info').first().show().animate({width: '50%'});
     
     // Show Info On Click
     
