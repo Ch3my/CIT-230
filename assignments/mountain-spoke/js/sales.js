@@ -6,7 +6,7 @@ $(function () {
     
     // Give Active Class
     
-    $('.item').first().addClass('active');
+    $('.item').first().addClass('active-sales');
     
     // Show First Info
     
