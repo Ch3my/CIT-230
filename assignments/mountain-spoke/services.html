@@ -23,37 +23,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
 
-    <script>
-        var tBody = document.querySelector('tbody');
-        var requestURL = 'https://ch3my.github.io/CIT-230/assignments/mountain-spoke/data/data.json';
-        var request = new XMLHttpRequest();
-        request.open('GET', requestURL);
-        request.responseType = 'json';
-        request.send();
-        request.onload = function () {
-            var data = request.response;
-            Object.keys(data.items)
-            writeTable(data);
-        }
-        function writeTable(data) {
-            for (i = 0; i < data.items.length; i++) {
-                var tr = document.createElement('tr');
-                // Por cada Item le saca las claves a ese item
-                keys = Object.keys(data.items[i]);
-                for (x = 0; x < keys.length; x++) {
-                    var thisKeyEval = 'data.items[' + i + '].' + keys[x];
-                    console.log(thisKeyEval);
-                    var td = document.createElement('td');
-                    td.textContent =  eval(thisKeyEval);
-                    tr.appendChild(td);
-                    console.log(tr);
-                }
-            tBody.appendChild(tr);
-            }
-        }
 
-
-    </script>
 </head>
 
 <body>
@@ -152,6 +122,38 @@
         </div>
         <!-- /Container -->
     </footer>
+
+    <script>
+        var tBody = document.querySelector('tbody');
+        var requestURL = 'https://ch3my.github.io/CIT-230/assignments/mountain-spoke/data/data.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function () {
+            var data = request.response;
+            Object.keys(data.items)
+            writeTable(data);
+        }
+        function writeTable(data) {
+            for (i = 0; i < data.items.length; i++) {
+                var tr = document.createElement('tr');
+                // Por cada Item le saca las claves a ese item
+                keys = Object.keys(data.items[i]);
+                for (x = 0; x < keys.length; x++) {
+                    var thisKeyEval = 'data.items[' + i + '].' + keys[x];
+                    console.log(thisKeyEval);
+                    var td = document.createElement('td');
+                    td.textContent = eval(thisKeyEval);
+                    tr.appendChild(td);
+                    console.log(tr);
+                }
+                tBody.appendChild(tr);
+            }
+        }
+
+
+    </script>
 
 </body>
 
