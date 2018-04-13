@@ -32,14 +32,16 @@
         request.send();
         request.onload = function () {
             var data = request.response;
+            Object.keys(data.items)
             writeTable(data);
         }
         function writeTable(data) {
             for (i = 0; i < data.items.length; i++) {
                 var tr = document.createElement('tr');
-                keys = Object.keys(data.items);
+                // Por cada Item le saca las claves a ese item
+                keys = Object.keys(data.items[i]);
                 for (x = 0; x < keys.length; x++) {
-                    var thisKeyEval = 'data.items.' + keys[x];
+                    var thisKeyEval = 'data.items[' + i + '].' + keys[x];
                     console.log(thisKeyEval);
                     var td = document.createElement('td');
                     td.textContent =  eval(thisKeyEval);
