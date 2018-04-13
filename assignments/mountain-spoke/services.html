@@ -38,11 +38,12 @@
             for (i = 0; i < data.items.length; i++) {
                 var tr = document.createElement('tr');
                 keys = Object.keys(data.items);
-                for (x = 0; x < keys.length ; x++) {
+                for (x = 0; x < keys.length; x++) {
                     var td = document.createElement('td');
-                    td.textContent(data.items.keys[x]);
+                    td.textContent = data.items.keys[x];
                     tr.appendChild(tr);
                 }
+            tBody.appendChild(tr);
             }
         }
 
