@@ -35,15 +35,14 @@
             writeTable(data);
         }
         function writeTable(data) {
-            for (i = 0; i < data.lenght; i++) {
+            for (i = 0; i < data.items.length; i++) {
                 var tr = document.createElement('tr');
-                for (x = 0; x < data.i.lenght; x++) {
+                keys = Object.keys(data.items);
+                for (x = 0; x < keys.length ; x++) {
                     var td = document.createElement('td');
-                    for (y = 0; y < Object.keys(data.i); y++) {
-                        td.textContent(data.i.product);
-                    }
+                    td.textContent(data.items.keys[x]);
+                    tr.appendChild(tr);
                 }
-                tr.appendChild(tr);
             }
         }
 
