@@ -16,9 +16,9 @@ $(function () {
     
     $('.item').click(function () {
         
-        $(this).addClass("active").siblings('.item').removeClass('active');
+        $(this).addClass("active-sales").siblings('.item').removeClass('active-sales');
         
-        $(this).next().show().animate({width: '40%'}).siblings('.info').animate({width: 0}, function () {
+        $(this).next().show().animate({width: '50%'}).siblings('.info').animate({width: 0}, function () {
             
             $(this).hide();
             
