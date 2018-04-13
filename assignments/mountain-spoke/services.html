@@ -22,6 +22,33 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TimelineMax.min.js"></script>
+
+    <script>
+        var tBody = document.querySelector('tbody');
+        var requestURL = 'data/data.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function () {
+            var data = request.response;
+            writeTable(data);
+        }
+        function writeTable(data) {
+            for (i = 0; i < data.lenght; i++) {
+                var tr = document.createElement('tr');
+                for (x = 0; x < data.i.lenght; x++) {
+                    var td = document.createElement('td');
+                    for (y = 0; y < Object.keys(data.i); y++) {
+                        td.textContent(data.i.product);
+                    }
+                }
+                tr.appendChild(tr);
+            }
+        }
+
+
+    </script>
 </head>
 
 <body>
@@ -39,38 +66,26 @@
                     <span class="sr-only">(current)</span>
                 </a>
                 <a class="nav-item nav-link " href="adventure.html">Adventure Tours</a>
-                <a class="nav-item nav-link active" href="#">Event</a>
+                <a class="nav-item nav-link " href="#">Event</a>
                 <a class="nav-item nav-link" href="sales.html">Sales</a>
-                <a class="nav-item nav-link" href="#">Services</a>
+                <a class="nav-item nav-link active" href="#">Services</a>
                 <a class="nav-item nav-link" href="#">Contact</a>
 
             </div>
         </div>
     </nav>
-    <main style="padding-top:200px;">
+    <main style="padding-top:100px;">
         <h1>Services</h1>
-        <table class="u-full-width">
+        <table style="margin: 0 auto">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Age</th>
-                    <th>Sex</th>
-                    <th>Location</th>
+                    <th>Product</th>
+                    <th>Description</th>
+                    <th>Cost</th>
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Dave Gamache</td>
-                    <td>26</td>
-                    <td>Male</td>
-                    <td>San Francisco</td>
-                </tr>
-                <tr>
-                    <td>Dwayne Johnson</td>
-                    <td>42</td>
-                    <td>Male</td>
-                    <td>Hayward</td>
-                </tr>
+                <!-- Here the Data is appended form Javascript -->
             </tbody>
         </table>
     </main>
